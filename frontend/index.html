@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Full Stack App</title>
+</head>
+<body>
+  <h1>Frontend Running</h1>
+  <button onclick="callAPI()">Call Backend</button>
+
+  <script>
+    function callAPI() {
+      fetch("http://localhost:3000")
+        .then(res => res.text())
+        .then(data => alert(data));
+    }
+  </script>
+</body>
+</html>
